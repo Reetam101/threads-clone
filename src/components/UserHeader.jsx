@@ -39,7 +39,11 @@ const UserHeader = () => {
           <Flex>
             <Text fontSize={"sm"}>markzuckerberg</Text>
             <Text
-              fontSize={"xs"}
+              fontSize={{
+                base: "xs",
+                md: "sm",
+                lg: "md",
+              }}
               bg={"gray.dark"}
               color={"gray.light"}
               p={1}
@@ -50,7 +54,14 @@ const UserHeader = () => {
           </Flex>
         </Box>
         <Box>
-          <Avatar name="Mark Zuckerberg" src="/zuck-avatar.png" size={"xl"} />
+          <Avatar
+            name="Mark Zuckerberg"
+            src="/zuck-avatar.png"
+            size={{
+              base: "md",
+              md: "xl",
+            }}
+          />
         </Box>
       </Flex>
 

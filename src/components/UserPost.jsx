@@ -2,7 +2,7 @@ import { Avatar, Box, Flex, Image, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "./Actions";
 
 const UserPost = ({ likes, replies, postImg, postTitle }) => {
   const [liked, setLiked] = useState(false);

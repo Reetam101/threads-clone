@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 
-const SocialIcons = ({ liked, setLiked }) => {
+const Actions = ({ liked, setLiked }) => {
   const handleLikeAndUnlike = () => {
     setLiked((prev) => !prev);
   };
@@ -61,7 +61,7 @@ const SocialIcons = ({ liked, setLiked }) => {
   );
 };
 
-export default SocialIcons;
+export default Actions;
 
 const RepostSVG = () => {
   return (
